@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 300;
+
+  color-scheme: dark;
+  color: #c53939;
+  background-color: #221f1f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  max-width: 740px;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #8d2424;
+  color: #ffffff;
+}
+
+a {
+  font-weight: 500;
+  color: #60a5fa; /* Tailwind blue-400 */
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 2px;
+  border: 1px solid #222;
+  padding: 0.7em 1.4em;
+  font-size: 1.05em;
+  font-weight: 200;
+  font-family: inherit;
+  background-color: #18181b; /* Tailwind zinc-900 */
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.2s;
+}
+button:hover {
+  border-color: #60a5fa;
+  background: #27272a; /* Tailwind zinc-800 */
+}
+button:focus,
+button:focus-visible {
+  outline: 3px auto #60a5fa;
+}
+
+input, textarea {
+  background: #2e2e38;
+  color: #fff;
+  border: 1px solid #222;
+  padding: 0.7em 1em;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border 0.2s;
+}
+input:focus, textarea:focus {
+  border-color: #60a5fa;
+  outline: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #1b252e;
+    background-color: #ffffff;
+  }
+  html, body {
+    background: #d9edda;
+    color: #213547;
+  }
+  a {
+    color: #646cff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #213547;
+    border-color: #ccc;
+  }
+  button:hover {
+    border-color: #646cff;
+    background: #e0e7ff;
+  }
+  input, textarea {
+    background: #fff;
+    color: #213547;
+    border-color: #ccc;
+  }
+  input:focus, textarea:focus {
+    border-color: #646cff;
+  }
+}
